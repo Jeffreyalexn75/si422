@@ -2211,7 +2211,7 @@ var Microsoft;
                     this.sizeInBytes += this.level.toString().length;
                     this.sizeInBytes += this.line.toString().length;
                 }
-                _StackFrame.regex = /^([\s]+at)?(.*?)(\@|\s\(|\s)([^\(\@\n]+):([0-9]+):([0-9]+)(\)?)$/;
+                _StackFrame.regex = /^([\s]+at)?([^\s@]+)(\@|\s\(|\s)([^\(\@\n]+):([0-9]+):([0-9]+)(\)?)$/;
                 _StackFrame.baseSize = 58;
                 return _StackFrame;
             })(AI.StackFrame);
