@@ -354,10 +354,11 @@ var Microsoft;
             Util.deleteCookie = function (name) {
                 Util.document.cookie = name + "=;path=/;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
             };
-            Util.trim = function (str) {
-                if (typeof str !== "string")
-                    return str;
-                return str.replace(/^\s+|\s+$/g, "");
+           Util.trim = function (str) {
+                if (typeof str !== "string") {
+                return str;
+            }
+                return str.trim();
             };
             Util.newId = function () {
                 var base64chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
